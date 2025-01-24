@@ -32,7 +32,7 @@ Ensure your AWS credentials are correctly configured for Terraform and `kubectl`
 
 
 
-**Step 2: Provision AWS Infrastructure with Terraform**
+## Step 2: Provision AWS Infrastructure with Terraform
 *2.1 Initialize Terraform*
 Pull the repository code to your local machine and navigate to the directory where your Terraform configuration files are located.
 *Then, initialize Terraform by running:*
