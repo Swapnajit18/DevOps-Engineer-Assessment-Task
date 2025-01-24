@@ -33,28 +33,31 @@ Ensure your AWS credentials are correctly configured for Terraform and `kubectl`
 
 
 ## Step 2: Provision AWS Infrastructure with Terraform
-*2.1 Initialize Terraform*
+2.1 Initialize Terraform
 Pull the repository code to your local machine and navigate to the directory where your Terraform configuration files are located.
-*Then, initialize Terraform by running:*
+Then, initialize Terraform by running:
 
  ```bash
 terraform init   #This command will initialize Terraform and download the necessary provider plugins.
 
 
 
-*2.2 Plan Terraform Changes*
+2.2 Plan Terraform Changes
 Run the following command to see the changes Terraform will apply:
+
  ```bash
-**terraform plan** #Review the output to ensure that the infrastructure will be created as expected.
+terraform plan  #Review the output to ensure that the infrastructure will be created as expected.
 
 2.3 Apply Terraform Configuration
 To provision the infrastructure, run the following command:
+
  ```bash
-**terraform apply** #When prompted, type yes to confirm that Terraform should create the necessary resources. Terraform will provision the EKS cluster and related AWS resources (e.g., VPC, IAM roles, subnets).
+terraform apply #When prompted, type yes to confirm that Terraform should create the necessary resources. Terraform will provision the EKS cluster and related AWS resources (e.g., VPC, IAM roles, subnets).
 
 
 
-## Step 3: Create and Push Docker Image
+
+Step 3: Create and Push Docker Image
 
 *3.1 Build Docker Image*
 To containerize the web application, you first need to build the Docker image using your Dockerfile. Follow the instructions below to build and push the image to Docker Hub (or ECR if needed).
