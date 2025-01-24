@@ -54,7 +54,8 @@ To provision the infrastructure, run the following command:
 
 
 
-**Step 3: Create and Push Docker Image**
+## Step 3: Create and Push Docker Image
+
 *3.1 Build Docker Image*
 To containerize the web application, you first need to build the Docker image using your Dockerfile. Follow the instructions below to build and push the image to Docker Hub (or ECR if needed).
 
